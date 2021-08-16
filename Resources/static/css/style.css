@@ -1,0 +1,50 @@
+.navbar {
+    background: linear-gradient(to right, magenta, #364832);
+    color: magenta;
+}
+
+.navbar-brand {
+    color: magenta !important;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: gray !important;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #1d301c;
+    border-color: #1d301c;
+}
+
+.btn-primary:hover {
+    background-color: #3f4e3b;
+    border-color: #3f4e3b;
+}
+
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
