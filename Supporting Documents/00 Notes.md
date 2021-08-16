@@ -11,5 +11,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## Contributors
 
 - [@Alysha](https://github.com/alysnow)
-- [@Sam](https://github.com/XXX)
+- [@Sam](https://github.com/SamanthaVanWyngaarden)
 - [@Steph](https://github.com/sSalvs)
