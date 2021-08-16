@@ -1,6 +1,6 @@
 # Project Proposal
 
-![05_finalprojectproposal](Images/05_finalprojectproposal.PNG.png)
+![05_finalprojectproposal](https://github.com/alysnow/Final-Project/blob/main/Images/05_finalprojectproposal.PNG)
 
 - - -
 

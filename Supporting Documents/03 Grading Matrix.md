@@ -1,6 +1,6 @@
 # Grading Matrix
 
-![03_grading](Images/03_grading.PNG)
+![03_grading](https://github.com/alysnow/Final-Project/blob/main/Images/03_grading.PNG)
 
 - - -
 

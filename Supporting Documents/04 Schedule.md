@@ -1,6 +1,6 @@
 # Schedule
 
-![04_schedule](Images/04_schedule.PNG)
+![04_schedule](https://github.com/alysnow/Final-Project/blob/main/Images/04_schedule.PNG)
 
 - - -
 
