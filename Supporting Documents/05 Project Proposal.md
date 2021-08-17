@@ -8,21 +8,21 @@
 
 ## Overview
 
-In preparation for the completion of the Data Analytics Bootcamp and with the recent Pandemic its become increasingly important to find a good movie to watch. Figuring out what to stream can be daunting, recommendations based on movies you have watched and loved to provide a list of similar movies to watch.. In this project we will be using a Movielens dataset which includes 100,000 ratings and 3,600 tag applications applied to 9,000 movies by 600 users to predict and reccommend similar movies.
+Ever thought about making your own film and curious how your movie would fare up in Hollywood? in this project we will be using a Data World IMDB Movie dataset which includes 1000 records which includes all the data of IMDB from the year 2006 to 2016. The era where the greatest movies were made and what was the start of the Marvel Cinematic Universe and various other movies that went on to change the world.similar movies.
 
 ## Recommended models
 
-* Cosine similarity
-
 * Multi class Logistic Regression Model
 
-* Binary (Yes/No) Logistic Regression Model
+* Neural Networks
+
+* Cosine similarity
 
 - - -
 
-## Question
+## Hypothesis
 
-1. What movies should I watch which are similar to a movie I enjoyed? 
+1. Can we predict a movie Revenue using the following variables Genre1, Genre2, Genre3, Ratings, Votes, Metascore, Runtime (Minutes)?
 
 - - -
 
@@ -30,7 +30,7 @@ In preparation for the completion of the Data Analytics Bootcamp and with the re
 
 |No|Source|Link|
 |-|-|-|
-|1|MovieLens Datasets |https://grouplens.org/datasets/movielens/latest/|
+|1|IMDB Movie Data |https://data.world/promptcloud/imdb-data-from-2006-to-2016/workspace/project-summary?agentid=promptcloud&datasetid=imdb-data-from-2006-to-2016|
 
 - - -
 
@@ -38,10 +38,7 @@ In preparation for the completion of the Data Analytics Bootcamp and with the re
 
 |No|Source|Link|
 |-|-|-|
-|1|links.csv|https://data.placeholder.au/|
-|2|movies.csv|https://data.placeholder.au/|
-|2|ratings.csv|https://data.placeholder.au/|
-|2|tags.csv|https://data.placeholder.au/|
+|1|IMDB-Movie-Data.csv|https://github.com/alysnow/Final-Project/blob/main/Resources/data/IMDB-Movie-Data.csv|
 
 - - -
 
