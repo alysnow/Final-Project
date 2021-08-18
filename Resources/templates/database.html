@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- ----------------------------------------------------------------
+SCRIPTS
+---------------------------------------------------------------- -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,48 +15,59 @@
     <link href = "/Resources/static/css/style.css" rel = "stylesheet">
 
 </head>
-<body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <body background="/Images/retro-tv.jpg"></body> -->
+
+<body>
+<!-- ----------------------------------------------------------------
+NAVIGATION BAR
+---------------------------------------------------------------- -->
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/Resources/templates/index.html">
         <div class="logo-image">
-          <img src="/Images/logo.PNG" class="img-fluid">
-      </div>
-      </a
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/Resources/templates/index.html">Home</a>
-            <a class="nav-link" href="/Resources/templates/predict.html">Revenue Predictor </a>
-            <a class="nav-link" href="/Resources/templates/vis.html">Visualisations </a>
-            <a class="nav-link" href="/Resources/templates/database.html">Database </a>
-            <a class="nav-link" href="/Resources/templates/team.html">Team</a>
-          </div>
+          <img src="/Images/end-film-3504024-2936079.png" class="img-fluid">
         </div>
-        
-      </div> 
+      </a
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="/Resources/templates/index.html">Home</a>
+          <a class="nav-link" href="/Resources/templates/predict.html">Predictor </a>
+          <a class="nav-link" href="/Resources/templates/vis.html">Visualisations </a>
+          <a class="nav-link" href="/Resources/templates/database.html">Data </a>
+          <a class="nav-link" href="/Resources/templates/team.html">Team</a>
+        </div>
+      </div>
+    </div>
   </nav>
 
+<!-- ----------------------------------------------------------------
+PAGE HEADING
+---------------------------------------------------------------- -->
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>MovieBase</h1>
-        <a href="https://www.enterhere" target="_blank">Select your movie</a>
+        <a href="https://data.world/promptcloud/imdb-data-from-2006-to-2016/workspace/project-summary?agentid=promptcloud&datasetid=imdb-data-from-2006-to-2016" target="_blank">Source</a>
       </div>
     </div>
 
+<!-- ----------------------------------------------------------------
+DATATABLE (https://datatables.net/examples/data_sources/js_array.html)
+---------------------------------------------------------------- -->
   <div class="container"> 
-    <table id="rawData" class="display" width="100%"></table>
+    <table id="example" class="display" width="100%"></table>
   </div>
   <div class="row">
     <div class="col-md-12">
       <div id="bubble"></div>
     </div>
   </div>
-<script>
 
-</script>
+<!-- ----------------------------------------------------------------
+SCRIPTS
+---------------------------------------------------------------- -->
+<script></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>

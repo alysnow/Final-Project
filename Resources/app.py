@@ -7,7 +7,19 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 import os
 
+
+# Flask Setup
+#################################################
+
 app = Flask(__name__)
+
+
+# Models Setup
+#################################################
+
+
+# Page routes - create route that renders index.html template
+#################################################
 
 @app.route("/")
 def index():
@@ -30,12 +42,24 @@ def about():
     return render_template("team.html")
 
 
-# Route to render index.html template using data from Mongo
-@app.route("/raw_data_list")
-def raw_list():
-    raw_data_list = pd.read_csv("Resources/data/IMDB-Movie-Data.csv")
-    print(raw_data_list)
-    return jsonify(raw_data_list.values.tolist())
+#################################################
+# Query the database and send the jsonified results (Pet Pals) (Query the model return the )
+
+# @app.route("/send", methods=["GET", "POST"])
+# def send():
+#     if request.method == "POST":
+#         name = request.form["petName"]
+#         lat = request.form["petLat"]
+#         lon = request.form["petLon"]
+
+#         pet = Pet(name=name, lat=lat, lon=lon)
+#         db.session.add(pet)
+#         db.session.commit()
+#         return redirect("/", code=302)
+
+#     return render_template("predict.html")
+
+#################################################
 
 if __name__ == "__main__":
     app.run(debug=True)

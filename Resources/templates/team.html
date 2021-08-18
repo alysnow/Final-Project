@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- ----------------------------------------------------------------
+HEAD
+---------------------------------------------------------------- -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,28 +17,36 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
+<!-- <body background="/Images/retro-tv.jpg"></body> -->
+
+<!-- ----------------------------------------------------------------
+NAVIGATION BAR
+---------------------------------------------------------------- -->
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" href="/Resources/templates/index.html">
         <div class="logo-image">
-          <img src="/Images/logo.PNG" class="img-fluid">
+          <img src="/Images/end-film-3504024-2936079.png" class="img-fluid">
         </div>
       </a
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="/Resources/templates/index.html">Home</a>
-          <a class="nav-link" href="/Resources/templates/predict.html">Revenue Predictor </a>
+          <a class="nav-link" href="/Resources/templates/predict.html">Predictor </a>
           <a class="nav-link" href="/Resources/templates/vis.html">Visualisations </a>
-          <a class="nav-link" href="/Resources/templates/database.html">Database </a>
+          <a class="nav-link" href="/Resources/templates/database.html">Data </a>
           <a class="nav-link" href="/Resources/templates/team.html">Team</a>
         </div>
       </div>
     </div>
   </nav>
 
+<!-- ----------------------------------------------------------------
+CAROUSEL
+---------------------------------------------------------------- -->
 
     <div class="container">
         <div class="row">
@@ -83,7 +96,7 @@
                           </div>
                           <!--.item-->
 
-                          <div class="carousel-item">
+                          <div class="carousel-item active">
                               <div class="row">
                                   <div class="col-md-3">
                                       <a href="#">
@@ -117,44 +130,71 @@
           </div>
       </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card ">
-       <img class="card-img-top" src="../static/image/alysha.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Alysha</h5>
-          <p class="card-text">Placeholder</p>
-          <a href="https://www.monkeyshoulder.com" target="_blank" class="btn btn-primary">Explore More</a>
-        </div>
+<br>
+<br>
+<br>
+<!-- ----------------------------------------------------------------
+CARD
+---------------------------------------------------------------- -->
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Sam</h2>
+        <p class="title">CEO &amp; Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-4">
-      <div class="card" >
-        <img class="card-img-top" src="../static/image/matt.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Sam</h5>
-          <p class="card-text">Placeholder</p>
-          <a href="https://www.craigellachie.com/" target="_blank" class="btn btn-primary">Explore More</a>
-        </div>
+  <div class="column">
+    <div class="card">
+      <img src="img2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Alysha</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
     </div>
+  </div>
 
-    <div class="col-sm-4">
-      <div class="card">
-        <img class="card-img-top" src="../static/image/steph.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Stephanie</h5>
-          <p class="card-text">Placeholder</p>
-          <a href="https://www.obanwhisky.com" target="_blank" class="btn btn-primary">Explore More</a>
-        </div>
+  <div class="column">
+    <div class="card">
+      <img src="img3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Steph</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
     </div>
-
   </div>
 </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- ----------------------------------------------------------------
+SCRIPTS
+---------------------------------------------------------------- -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</script>
+
 </body>
 </html>
