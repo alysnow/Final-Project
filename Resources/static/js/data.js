@@ -5,7 +5,7 @@ function loadData() {
     d3.json("/raw_data_list").then((dataSet) => {
         // console.log(dataSet)
 
-        $(document).ready(function() {
+
             $('#rawData').DataTable( {
                 data: dataSet,
                 columns: [
@@ -26,8 +26,8 @@ function loadData() {
                 ]
             });
         });
-})
-
 }
 
-loadData()
+
+$(document).ready(function() {
+loadData()})
