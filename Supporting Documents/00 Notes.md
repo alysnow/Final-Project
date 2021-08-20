@@ -58,6 +58,7 @@
 ## Remaining Tasks
 
 * Save model
+* Create cast table for imdb_movies.db (forms) and dataframe to save to csv for tableau visualisations
 * Set up Flask
 ** save model file to app.py
 ** connect to database
