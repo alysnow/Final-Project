@@ -8,11 +8,13 @@
 
 ## Overview
 
-Ever thought about making your own film and curious how your movie would fare up in Hollywood? in this project we will be using a Data World IMDB Movie dataset which includes 1000 records which includes all the data of IMDB from the year 2006 to 2016. The era where the greatest movies were made and what was the start of the Marvel Cinematic Universe and various other movies that went on to change the world.similar movies.
+Ever thought about making your own film and curious how your movie would fare up in Hollywood? In this project we will be using a Movielens dataset which includes 100,000 ratings and 3,600 tag applications applied to 9,000 movies by 600 users to if a movie is "Good" or "Bad' and explore interesting visualisations.
 
 ## Recommended models
 
 * Multi class Logistic Regression Model
+
+* Support Vector Classification Machines - Scikit-learn
 
 * Neural Networks
 
@@ -22,7 +24,7 @@ Ever thought about making your own film and curious how your movie would fare up
 
 ## Hypothesis
 
-1. Can we predict a movie Revenue using the following variables Genre1, Genre2, Genre3, Ratings, Votes, Metascore, Runtime (Minutes)?
+1. Can we predict whether a movie will be "Good" or "Bad' using the following variables Genres, Popularity and Revenue?
 
 - - -
 
@@ -30,7 +32,7 @@ Ever thought about making your own film and curious how your movie would fare up
 
 |No|Source|Link|
 |-|-|-|
-|1|IMDB Movie Data |https://data.world/promptcloud/imdb-data-from-2006-to-2016/workspace/project-summary?agentid=promptcloud&datasetid=imdb-data-from-2006-to-2016|
+|1|MovieLens Datasets |https://grouplens.org/datasets/movielens/latest/|
 
 - - -
 
@@ -38,7 +40,7 @@ Ever thought about making your own film and curious how your movie would fare up
 
 |No|Source|Link|
 |-|-|-|
-|1|IMDB-Movie-Data.csv|https://github.com/alysnow/Final-Project/blob/main/Resources/data/IMDB-Movie-Data.csv|
+|1|MovieLens Datasets |https://grouplens.org/datasets/movielens/latest/|
 
 - - -
 
