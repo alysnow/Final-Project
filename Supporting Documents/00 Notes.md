@@ -53,21 +53,20 @@
 ** database page (JQuery Datatables)
 ** team page
 
+* Saved SVC model
+
+* Set up Flask
+** save model file to app.py
+** set up endpoint @app.routes for dropdown request form and return prediction
+
+* Build Form for index.html Prediction
+
+* Created Visualisations within MovieBase_main.ipynb
 - - -
 
 ## Remaining Tasks
 
-* Save model
-* Create cast table for imdb_movies.db (forms) and dataframe to save to csv for tableau visualisations
-* Set up Flask
-** save model file to app.py
-** connect to database
-** set up endpoint @app.routes for dropdown request form and return prediction
-* Build Forms for Prediction table
-* Create Visualisations and embed to HTML page
-* Update data.js file with updated json file for database table
-* Update MovieBase table in HTML to reflect the updated dataset json file
-* Update Team page with carousel and member thumbnails
+* Update index.html page with carousel and member thumbnails
 * Style Web Application and final touches (styles.css/bootstrap)
 * Deploy Web Application to Heroku
 * Prepare 10 minute data deep dive or infastructure presentation

@@ -1,30 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- ----------------------------------------------------------------
+HEAD
+---------------------------------------------------------------- -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieBase</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href = "/Resources/static/css/style.css" rel = "stylesheet">
 </head>
-<body background="/Images/565f472d3df667cf4adf74fdae6a333a.gif">
-  
-    <div class="row">
-      <div class="col-md-12 jumbotron text-right">
-        <h1 style="text-align:right; color:white; margin-right:50px">MovieBase</h1>
-        <h2 style="text-align:right; color:white; margin-right:50px; font-style:italic">Machine Learning Final Project</h2>
-      </div>
+
+<!-- ----------------------------------------------------------------
+NAVIGATION BAR
+---------------------------------------------------------------- -->
+
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/Resources/templates/index.html">
+            <div class="logo-image">
+              <img src="/Images/end-film-3504024-2936079.png" class="img-fluid">
+            </div>
+          </a
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/Resources/templates/index.html">Home</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+<!-- ----------------------------------------------------------------
+CAROUSEL
+---------------------------------------------------------------- -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 jumbotron text-center">
+      <h1>MovieBase Predictor</h1>
+      <p>xxx</p>
     </div>
-    
-    <div class="container">​
-<div style= "margin:0; left:50%; text-align: center; position: absolute; top:50%">
-  <a href="/Resources/templates/predict.html"><img src="/Images/end-film-3504024-2936079.png" class="img-fluid"></a>
-​</div>
   </div>
-​
+
+  <div class="container">
+    <div class="row blog">
+        <div class="col-md-12">
+            <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#blogCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="/Images/movie1.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="/Images/movie2.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="/Images/movie3.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="/Images/movie4.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="/Images/movie5.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="/Images/movie6.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="/Images/movie7.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="/Images/movie8.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+                </div>
+                <!--.carousel-inner-->
+            </div>
+            <!--.Carousel-->
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- ----------------------------------------------------------------
+TEST START
+---------------------------------------------------------------- -->
+      <h1>xxx</h1> 
+
+        <h4> Find out whether your movie is good or bad </h4>
+
+                <hr>
+
+                <h3>Budget:</h3>
+                <input id="budget">
+        
+                <h3>Runtime:</h3>
+                <input id="runtime">
+        
+                <h3>Release Year:</h3>
+                <input id="release_year">
+        
+                <h3>Sequel:</h3>
+                <input id="sequel">
+        
+                <h3>Genre:</h3>
+                <select id="genre">
+                  <option value = 'Comedy'>Comedy</option>
+                  <option value = 'Drama'>Drama</option>
+                  <option value = 'Family'>Family</option>
+                  <option value = 'Romance'>Romance</option>
+                  <option value = 'Thriller'>Thriller</option>
+                  <option value = 'Action'>Action</option>
+                  <option value = 'Animation'>Animation</option>
+                  <option value = 'Adventure'>Adventure</option>
+                  <option value = 'Horror'>Horror</option>
+                  <option value = 'Documentary'>Documentary</option>
+                  <option value = 'Music'>Music</option>
+                  <option value = 'Science Fiction'>Science Fiction</option>
+                  <option value = 'Mystery'>Mystery</option>
+                  <option value = 'Foreign'>Foreign</option>
+                  <option value = 'Fantasy'>Fantasy</option>
+                  <option value = 'War'>War</option>
+                  <option value = 'Western'>Western</option>
+                  <option value = 'History'>History</option>
+                  <option value = 'TV Movie'>TV Movie</option>
+                </select>
+        
+                <br>
+                <br>
+                <button type="button" id="btn-predict">Predict</button>
+                <br>
+                <br>
+
+                <hr>
+
+                <h3>Our prediction</h3>
+
+                <h1 id="prediction-output"></h1>
+
+<!-- ----------------------------------------------------------------
+SCRIPTS
+---------------------------------------------------------------- -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./static/js/app.js"></script>
-​
+  <script src="/Resources/static/css/style.css"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="../static/js/predict.js"></script>
+
 </body>
 </html>

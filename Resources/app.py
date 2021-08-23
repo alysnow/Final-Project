@@ -7,12 +7,13 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 import os
 import pickle
+from sklearn.svm import SVC 
+import json
 
 # Flask Setup
 #################################################
 
 app = Flask(__name__)
-
 
 # Models Setup
 #################################################
@@ -25,43 +26,20 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/predict")
-def data():
-    return render_template("predict.html")
-
-@app.route("/vis")
-def vis():
-    return render_template("vis.html")
-
-@app.route("/database")
-def stats():
-    return render_template("database.html")
-
-@app.route("/team")
-def about():
-    return render_template("team.html")
-
-
+# Allow the use of POST request with methods=["POST"]
 #################################################
-# Query the database and send the jsonified results (Pet Pals) (Query the model return the )
-
-@app.route("/send", methods=["GET", "POST"])
-def send():
-    if request.method == "POST":
-        print(request.form)
-        name = request.form["movieform"]
-        print(movieform)
-        budget = request.form["budget"]
-        # sequel = request.form["runtime"]
-        # budget = request.form["sequel"]
-        # budget = request.form["release_year"]
-        genre = request.form["genre"]
+@app.route("/api/predict", methods=["POST"])
+def predict():
+    if request.method == "POST":  # if the request method is POST
+        x_values = request.get_json()  # get the json data
+        scaler = pickle.load(open("scaler.pkl","rb"))  # load the model
+        model = pickle.load(open("model_svc.pkl","rb"))  # load the model
+        genre = x_values['genre']
 
         if genre == 'Comedy':
             Comedy = 1
         else:
             Comedy = 0
-
         if genre == 'Drama':
             Drama = 1
         else:
@@ -156,25 +134,25 @@ def send():
             TVMovie = 1
         else:
             TVMovie = 0
+        print('1-everthing here is good')
+        scaled_results = scaler.fit_transform(
+            [[
+                int(x_values['budget']),
+                float(x_values['runtime']),
+                int(x_values['sequel']),
+                int(x_values['release_year']),
+                Comedy,Drama,Family,Romance,Thriller,Action,Animation,Adventure,Horror,Documentary,Music,Crime,ScienceFiction,Mystery,Foreign,Fantasy,War,Western,History,TVMovie
+            ]]
+        )
+        print('2-everthing here is good')
+        prediction = model.predict(  # perform the prediction by passing in your x-values
+            scaled_results
+        )
+        print('3-everthing here is good')
+        print(prediction)
 
-        print(genre)
-
-        ## Dropdown returns the seleted value in the request.genre
-
-        inputs = [[budget,Comedy,Drama,Family,Romance,Thriller,Action,Animation,Adventure,Horror,Documentary,Music,Crime,ScienceFiction,Mystery,Foreign,Fantasy,War,Western,History,TVMovie]]
-
-        # scaler = pickle.load ('scaler.pkl')
-        # model = pickle.load ('model_svc.pkl')
-
-        # inputs_scaled = scaler.transform(inputs)
-
-        # prediction = model.predict(inputs_scaled)
-
-        # print(prediction)
-
-        return redirect("/", code=302)
-
-    return render_template("predict.html")
+        # return the predicted result
+        return {"prediction": str(prediction[0])}
 
 #################################################
 
