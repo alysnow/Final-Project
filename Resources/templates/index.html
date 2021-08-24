@@ -28,11 +28,85 @@ CAROUSEL
 ---------------------------------------------------------------- -->
 <div class="container">
   <div class="row">
-    <div class="col-md-12 jumbotron text-center">
+    <div class="title col-md-12 jumbotron text-center">
       <h1>MovieBase</h1>
       <p>Machine Learning Web Application Final Project</p>
     </div>
   </div>
+
+  <div class="container">
+    <div class="row blog">
+        <div class="col-md-12">
+            <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#blogCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="./static/images/movie1.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="./static/images/movie2.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="./static/images/movie3.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="./static/images/movie4.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="./static/images/movie5.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="./static/images/movie6.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="./static/images/movie7.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="./static/images/movie8.jpg" alt="Image" style="max-width:100%;">
+                                </a>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+                </div>
+                <!--.carousel-inner-->
+            </div>
+            <!--.Carousel-->
+        </div>
+    </div>
+</div>
 
 <br>
 <br>
@@ -41,6 +115,8 @@ CAROUSEL
 <!-- ----------------------------------------------------------------
 TEST START
 ---------------------------------------------------------------- -->
+
+<div class=container2>
       <h2>M|B Predictor</h2> 
       <h6>Use the predictor tool to find out whether a Movie is going to be good or bad</h6>
 
@@ -51,7 +127,7 @@ TEST START
         
                 <h4>Runtime:</h4>
                 <input id="runtime">
-        
+       
                 <h4>Genre:</h4>
                 <select id="genre">
                   <option value = 'Comedy'>Comedy</option>
@@ -64,7 +140,7 @@ TEST START
                   <option value = 'Adventure'>Adventure</option>
                   <option value = 'Horror'>Horror</option>
                   <option value = 'Music'>Music</option>
-                  <option value = 'Crime'>Music</option>
+                  <option value = 'Crime'>Crime</option>
                   <option value = 'Science Fiction'>Science Fiction</option>
                   <option value = 'Mystery'>Mystery</option>
                   <option value = 'Fantasy'>Fantasy</option>
@@ -72,7 +148,7 @@ TEST START
                   <option value = 'History'>History</option>
                 </select>
         
-                <h4>language:</h4>
+                <h4>Language:</h4>
                 <select id="language">
                   <option value = 'English'>English</option>
                   <option value = 'Français'>French</option>
@@ -92,7 +168,7 @@ TEST START
                 <h4>Our prediction</h4>
 
                 <h1 id="prediction-output"></h1>
-
+              </div>
 <!-- ----------------------------------------------------------------
 SCRIPTS
 ---------------------------------------------------------------- -->

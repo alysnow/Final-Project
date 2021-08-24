@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     background: linear-gradient(to right, magenta, #364832);
     color: magenta;
 }
@@ -28,7 +28,7 @@
 .btn-primary:hover {
     background-color: #3f4e3b;
     border-color: #3f4e3b;
-}
+} */
 
 .blog .carousel-indicators {
 	left: 0;
@@ -36,6 +36,12 @@
     bottom: -40px;
 
 }
+
+.title  {
+  color:aqua;
+  font-family: Blippo, fantasy;
+}
+
 
 /* The colour of the indicators */
 .blog .carousel-indicators li {
@@ -73,6 +79,12 @@ background: #707070;
   /* Some left and right padding inside the container */
   .container {
     padding: 0 16px;
+  }
+
+  .container2 {
+    padding: 0 16px;
+    /* background-color: rgba(77, 95,177); */
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 132, 255));
   }
   
   /* Clear floats */

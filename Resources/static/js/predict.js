@@ -21,7 +21,6 @@ d3.select("#btn-predict").on("click", ()=>{
             "Content-type": "application/json"
         }
         
-
     }).then(response => { // when we receive the the response back, then we perform the steps below
         var prediction_output = d3.select("#prediction-output"); // select the area to put our predictions to
         console.log(response.prediction); // log out the result
