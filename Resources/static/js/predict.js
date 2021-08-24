@@ -2,10 +2,9 @@ d3.select("#btn-predict").on("click", ()=>{
     // get values from html input fields 
     var budget = d3.select("#budget").node().value; 
     var runtime = d3.select("#runtime").node().value;
-    var sequel = d3.select("#sequel").node().value; 
-    var release_year = d3.select("#release_year").node().value; 
     var genre = d3.select("#genre").node().value;
-    console.log(budget,sequel,runtime,release_year,genre)
+    var language = d3.select("#language").node().value;
+    console.log(budget,runtime,genre)
     // perform a POST request using D3 
     d3.json("/api/predict", {
         // perform a POST request 
@@ -14,9 +13,8 @@ d3.select("#btn-predict").on("click", ()=>{
         body: JSON.stringify({
             "budget": budget,
             "runtime": runtime,
-            "sequel": sequel,
-            "release_year": release_year,
-            "genre": genre
+            "genre": genre,
+            "language": language
           }),
         // the headers contains metadata about the POST request. We want to say that the data sent is "json" data, so we set "Content-type": "application/json"
         headers: {
