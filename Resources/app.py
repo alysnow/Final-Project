@@ -163,7 +163,7 @@ def predict():
             Russian = 0
 
         print('1-everthing here is good')
-        scaled_results = scaler.fit_transform(
+        scaled_results = scaler.transform(
             [[
                 int(x_values['budget']),
                 float(x_values['runtime']),
