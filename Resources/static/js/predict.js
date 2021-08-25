@@ -4,7 +4,7 @@ d3.select("#btn-predict").on("click", ()=>{
     var runtime = d3.select("#runtime").node().value;
     var genre = d3.select("#genre").node().value;
     var language = d3.select("#language").node().value;
-    console.log(budget,runtime,genre)
+    console.log(budget,runtime,genre,language)
     // perform a POST request using D3 
     d3.json("/api/predict", {
         // perform a POST request 
@@ -26,11 +26,11 @@ d3.select("#btn-predict").on("click", ()=>{
         console.log(response.prediction); // log out the result
         // if Good Movie
         if(response.prediction == 1){
-            prediction_output.text("Good Movie"); 
+            prediction_output.text("Good Movie :)"); 
         
         // if not Bad Movie
         } else { 
-            prediction_output.text("Bad Movie:(");
+            prediction_output.text("Bad Movie :(");
         }
     });
 })

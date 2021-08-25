@@ -12,45 +12,47 @@ SCRIPTS
     <!-- <script data-main="scripts/app" src="scripts/require.js"></script> -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href = "/Resources/static/css/style.css" rel = "stylesheet">
+    <link href = "./static/css/style.css" rel = "stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body background="./static/images/wallpaper3.jpg"></body>
 
 </head>
-
-<!-- <body background="/Images/retro-tv.jpg"></body> -->
-
-<body>
 <!-- ----------------------------------------------------------------
 NAVIGATION BAR
 ---------------------------------------------------------------- -->
+<body>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/Resources/templates/index.html">
-        <div class="logo-image">
-          <img src="/Images/end-film-3504024-2936079.png" class="img-fluid">
+      <a class="navbar-brand"href="/">
+          <div class="logo-image">
+            <img src="/static/images/logo.PNG" class="img-fluid">
         </div>
-      </a
+      </a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="/Resources/templates/index.html">Home</a>
-          <a class="nav-link" href="/Resources/templates/predict.html">Predictor </a>
-          <a class="nav-link" href="/Resources/templates/vis.html">Visualisations </a>
-          <a class="nav-link" href="/Resources/templates/database.html">Data </a>
-          <a class="nav-link" href="/Resources/templates/team.html">Team</a>
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/team">Team</a>
+          <a class="nav-link" href="/data">Dataset </a>
+          <a class="nav-link" href="/vis">Visualisations </a>
+          <a class="nav-link" href="/predict">Predict</a>
         </div>
       </div>
-    </div>
-  </nav>
+    </div> 
+</nav>
 
 <!-- ----------------------------------------------------------------
 PAGE HEADING
 ---------------------------------------------------------------- -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>MovieBase</h1>
-        <a href="https://data.world/promptcloud/imdb-data-from-2006-to-2016/workspace/project-summary?agentid=promptcloud&datasetid=imdb-data-from-2006-to-2016" target="_blank">Source</a>
-      </div>
+
+<div class="container">
+  <div class="row">
+    <div class="=mbtitle col-md-12 text-center" style= "color:rgb(7, 71, 131);font-family:Blippo, fantasy;font-size: x-large;">
+      <h1>Dataset</h1>
+      <p>Machine Learning Web Application Final Project</p>
     </div>
+  </div>
 
 <!-- ----------------------------------------------------------------
 DATATABLE (https://datatables.net/examples/data_sources/js_array.html)
@@ -71,8 +73,7 @@ SCRIPTS
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-<script src="/Resources/static/js/data.js"></script>
-
+<script src="./static/js/data.js"></script>
 
 </body>
 </html>

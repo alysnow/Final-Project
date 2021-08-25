@@ -26,6 +26,22 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/team")
+def about():
+    return render_template("team.html")
+
+@app.route("/data")
+def data():
+    return render_template("data.html")
+
+@app.route("/vis")
+def explore():
+    return render_template("vis.html")
+
+@app.route("/predict")
+def stats():
+    return render_template("predict.html")
+
 # Allow the use of POST request with methods=["POST"]
 #################################################
 @app.route("/api/predict", methods=["POST"])
