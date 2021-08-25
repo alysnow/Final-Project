@@ -28,47 +28,49 @@
 * Summarised data and relevant columns to plan machine learning, database tables and tableau visualisations
 
 * Created dataframes and imported tables to sqlite database (imdb_movie.db)
-** Genre
-** IMDB_table (selected columns from entire dataset)
-** Movie Title
-** Popularity
-** Revenue
+    * Genre
+    * IMDB_table (selected columns from entire dataset)
+    * Movie Title
+    * Popularity
+    * Revenue
 
 * Created tables for the predictor.html forms and user endpoint selection. (Available in imdb_movie.db and in csv files)
-** Genre
-** Movie Title
-** Popularity
-** Revenue
+    * Genre
+    * Movie Title
+    * Popularity
+    * Revenue
 
 * Created and saved csv files for the Tableau visualisations
-** IMDB (Selected columns from entire dataset)
-** Company (id,revenue,company_name)
-** Country (id,revenue,country_name)
+    * IMDB (Selected columns from entire dataset)
+    * Company (id,revenue,company_name)
+    * Country (id,revenue,country_name)
 ** genre (id,budget,genre_name)
 
 * Created template HTML files and included @app.route in app.py file to navigate between HTML pages
-** index home page
-** prediction page (D3.js)
-** visualisation page (Tableau)
-** database page (JQuery Datatables)
-** team page
+    * index home page
+    * prediction page (D3.js)
+    * visualisation page (Tableau)
+    * database page (JQuery Datatables)
+    * team page
 
 * Saved SVC model
 
 * Set up Flask
-** save model file to app.py
-** set up endpoint @app.routes for dropdown request form and return prediction
+    * save model file to app.py
+    * set up endpoint @app.routes for dropdown request form and return prediction
 
 * Build Form for index.html Prediction
 
 * Created Visualisations within MovieBase_main.ipynb
+
+* Deploy Web Application to Heroku
 - - -
 
 ## Remaining Tasks
 
+* Fix Model to ensure a Good and Bad Movie is returned from the prediction
 * Update index.html page with carousel and member thumbnails
 * Style Web Application and final touches (styles.css/bootstrap)
-* Deploy Web Application to Heroku
 * Prepare 10 minute data deep dive or infastructure presentation
 * Update README and clean up files for submission
 
@@ -76,38 +78,19 @@
 
 ## Dataset Overview
 
-The data includes cast, crew, keywords, budget, posters, release dates, languages, production companies, and countries.
+* The data includes cast, crew, keywords, budget, posters, release dates, languages, production companies, and countries.
 
-The following are few important features present in dataset:
-belongs_to_collection : This feautue is present only for true movie sequels.
-budget: Buget of film in USD
-genres
-original_language: Language with the original version of the film.
-original_title: Title of film when it is first officially released locally
-overview: Describe the plot of the movie.
-popularity
-production_companies
-production_countries
-release_date
-runtime: Length of movie.
-spoken_languages: Languages spoken in the movie
-status: Whether movie is release or not.
-Keywords
-cast: Information all cast memebers
-crew: Information of, director, producer, writer etc.
-revenue: Target variable. Revenue of film in USD
+* Data types present in dataset:
+    * String
+    * Numeric
+    * Date
+    * JSON
 
-Data types present in dataset:
-String
-Numeric
-Date
-JSON
-
-Handling JSON data
-There are a number of attributes such as cast, crew, genres which represents important information about each movie. They are multivalued fields. Each value in these fields are a JSON object.
-Example. of genres. [{'id': 35, 'name': 'Comedy'}, {'id': 18, 'name': 'Drama'}, {'id': 10751, 'name': 'Family'}, {'id': 10749, 'name': 'Romance'}]
+* Handling JSON dats. There are a number of attributes such as cast, crew, genres which represents important information about each movie. They are multivalued fields. Each value in these fields are a JSON object. Example. of genres. [{'id': 35, 'name': 'Comedy'}, {'id': 18, 'name': 'Drama'}, {'id': 10751, 'name': 'Family'}, {'id': 10749, 'name': 'Romance'}]
 
 ### Columns
+
+The following are few important features present in dataset:
 
 **id** - Integer unique id of each movie
 
