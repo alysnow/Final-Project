@@ -49,8 +49,10 @@ def predict():
     if request.method == "POST":  # if the request method is POST
         x_values = request.get_json()  # get the json data
         scaler = pickle.load(open("scaler.pkl","rb"))  # load the model
-        model = pickle.load(open("model_svc.pkl","rb"))  # load the model
-
+        model = pickle.load(open("model_svcrev.pkl","rb"))  # load the model Y on Revenue (>1700000, 1, 0)
+        # model = pickle.load(open("model_svctot.pkl","rb"))  # load the model Y on Total Votes (>263, 1, 0)
+        # model = pickle.load(open("model_svcpop.pkl","rb"))  # load the model Y on Popularity2 (>8, 1, 0)
+        # model = pickle.load(open("model_svcrat.pkl","rb"))  # load the model Y on Rating (>6, 1, 0)
         genre = x_values['genre']
 
         if genre == 'Comedy':
