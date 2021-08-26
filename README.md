@@ -319,7 +319,7 @@ The data confirmed movies which have a higher budget returned a higher revenue. 
 
 From the previous bar char above where you can see the Revenue versus Budget the Genre Adventure was both showing as the highest budgeted and revenue and also had the highest votes and popularity score. Therefore is was confirmed movies with the Genre Adventure were the most popular with the highest revenue.
 
-![image](https://github.com/alysnow/Final-Project/tree/main/Images/RevenuevDOW.png)
+![image](https://github.com/alysnow/Final-Project/blob/main/Images/RevenuevDOW.png)
 
 - - -
 
