@@ -1,23 +1,20 @@
 from flask import Flask, jsonify, render_template, redirect, request
-import sqlite3 as sql
 from pandas.core.frame import DataFrame
-from sqlalchemy import create_engine
+from sklearn.svm import SVC
+# from sqlalchemy import create_engine
+# from sqlalchemy.ext.automap import automap_base
+# from sqlalchemy.orm import Session
+
 import pandas as pd
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-import os
+import sqlite3 as sql
 import pickle
-from sklearn.svm import SVC 
 import json
+import os
 
 # Flask Setup
 #################################################
 
 app = Flask(__name__)
-
-# Models Setup
-#################################################
-
 
 # Page routes - create route that renders index.html template
 #################################################
@@ -53,6 +50,9 @@ def predict():
         # model = pickle.load(open("model_svctot.pkl","rb"))  # load the model Y on Total Votes (>263, 1, 0)
         # model = pickle.load(open("model_svcpop.pkl","rb"))  # load the model Y on Popularity2 (>8, 1, 0)
         # model = pickle.load(open("model_svcrat.pkl","rb"))  # load the model Y on Rating (>6, 1, 0)
+        
+# Genre
+#################################################
         genre = x_values['genre']
 
         if genre == 'Comedy':
@@ -134,6 +134,8 @@ def predict():
         else:
             History = 0
 
+# Language
+#################################################
 
         language = x_values['language']
 

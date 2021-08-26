@@ -8,10 +8,6 @@
   background: linear-gradient(to right, rgba(0, 4, 255, 0), rgb(7, 71, 131));
   color:white;
   width: 2606px;
-  /* margin:0;
-  left:80%;
-  text-align: right; */
-
 }
 
 .navbarmb {
@@ -57,23 +53,13 @@ padding-left: 1572px;
 
 /**************************************************HRefs and Titles*************************************/
 
-/* .mbtitle  {
-  color:rgba(202, 189, 7, 0.842);
-  font-family: Blippo, fantasy;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-right: 60px;
-  padding-left: 60px;
-  margin-bottom: 30px;
-} */
-
-h2 {
+/* h2 {
   color: white
 }
 
 h6 {
   color: white
-}
+} */
 
 .container2 {
   padding: 0 16px;
@@ -83,15 +69,14 @@ h6 {
 .container3 {
   margin-left: 50px;
   margin-right: 50px;
-  width:2582px;
-
+  /* width:2582px; */
 }
+
 .container4 {
   padding-left: 25px;
   padding-right: 25px;
-  width:2550px;
+  /* width:2550px; */
   background-color:rgb(110, 165, 218);
-
 }
 
 .column-team{

@@ -64,13 +64,15 @@
 * Created Visualisations within MovieBase_main.ipynb
 
 * Deploy Web Application to Heroku
+
+* Fixed the Model to ensure a Good and Bad Movie is returned from the prediction by amending line 168 in the app.py file from "scaled_results = scaler.fit_transform" to scaled_results = scaler.transform removing the "fit"
+
+* Style Web Application and final touches (styles.css/bootstrap)
 - - -
 
 ## Remaining Tasks
 
-* Fix Model to ensure a Good and Bad Movie is returned from the prediction
 * Update index.html page with carousel and member thumbnails
-* Style Web Application and final touches (styles.css/bootstrap)
 * Prepare 10 minute data deep dive or infastructure presentation
 * Update README and clean up files for submission
 
