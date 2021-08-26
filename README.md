@@ -312,14 +312,14 @@ It was found Movies released in June and on a Wednesday appear to have the highe
 
 The data confirmed movies which have a higher budget returned a higher revenue. Below is a bar graph displaying the median Revenue per Genre versus the median Budget
 
-![image](https://github.com/alysnow/Final-Project/tree/main/Images/RevenuevBudget.png)
+![image](https://github.com/alysnow/Final-Project/blob/main/Images/RevenuevBudget.png)
 
 
 ### Question 3: Whats is the most popular Genre and which Genre returns the highest revenue?
 
 From the previous bar char above where you can see the Revenue versus Budget the Genre Adventure was both showing as the highest budgeted and revenue and also had the highest votes and popularity score. Therefore is was confirmed movies with the Genre Adventure were the most popular with the highest revenue.
 
-![image](https://github.com/alysnow/Final-Project/tree/main/Images/GenrePopularity.PNG)
+![image](https://github.com/alysnow/Final-Project/tree/main/Images/RevenuevDOW.png)
 
 - - -
 
