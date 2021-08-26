@@ -288,7 +288,6 @@ The following key features were noted for a "Good" movie.
 
 Movies with higher budget proved to return a higher revenue and have more success
 
-![image](https://github.com/alysnow/Final-Project/blob/main/Images/moviebase_heroku.PNG)
 
 ### Language
 
